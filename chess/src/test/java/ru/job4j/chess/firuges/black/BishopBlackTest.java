@@ -17,8 +17,8 @@ public class BishopBlackTest {
     @Test
     public void whenWay() {
         BishopBlack bishopBlack = new BishopBlack(Cell.C1);
-        bishopBlack.way(Cell.G5);
-        assertThat(new ImpossibleMoveException(), is(ps));
+        Cell[] expected = {Cell.C1, Cell.D2, Cell.E3, Cell.F4, Cell.G5};
+        assertEquals(expected, bishopBlack.way(Cell.G5));
     }
 
     @Test

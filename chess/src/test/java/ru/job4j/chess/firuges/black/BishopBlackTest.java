@@ -34,6 +34,6 @@ public class BishopBlackTest {
     public void whenCopy() {
         BishopBlack bishopBlack = new BishopBlack(Cell.D7);
         Cell expected = Cell.D7;
-        assertEquals(expected, bishopBlack.copy(Cell.D7));
+        assertEquals(expected, ((bishopBlack.copy(Cell.D7)).position()));
     }
 }
